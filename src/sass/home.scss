@@ -1,0 +1,180 @@
+header{
+    width:1440px;
+    .topNav{
+        background-color: #F2F2F2;
+        font-size: 12px;
+        line-height: 30px;
+        height: 30px;
+        
+        .navLeft{
+            float:left;
+            >li{
+                float:left;
+            }
+            li:nth-child(1){
+                width: 86px;
+            }
+            li:nth-child(2){
+                width: 48px;
+            }
+            li:nth-child(3){
+                width: 81px;
+            }
+        }
+        .navRight{
+            float:right;
+            >li{
+                float:left;
+            }
+            li:nth-child(1){
+                width: 86px;
+            }
+            li:nth-child(2){
+                width: 80px;
+            }
+            li:nth-child(3){
+                width: 91px;
+            }
+            li:nth-child(4){
+                width: 95px;
+            }
+            li:nth-child(5){
+                width: 93px;
+            }
+            li:nth-child(6){
+                width: 104px;
+            }
+            li:nth-child(7){
+                width: 48px;
+            }
+        }
+        
+    }
+    .topSearch{
+        height: 76px;
+        padding-top: 24px;
+        background-color: #eee;
+        .container{
+            display:flex;
+        }
+        .logo{
+            width: 220px;
+            h1{
+                text-indent: -1000px;
+                position: absolute;
+            }
+            img{
+                display:block;
+                width: 210px;
+            }
+        }
+        .search{
+            flex:1;
+            padding-left: 123px;
+            >div{
+                display:flex;
+                width: 511px;
+                height: 36px;
+                border: 2px solid #333;
+                input{
+                    width: 416px;
+                    
+                }
+                button{
+                    background-color: #333;
+                    flex: 1;
+                    border:0 none;
+                }
+            }
+            ul{
+                margin-top:9px;
+                font-size: 12px;
+                color:#999;
+            }
+            span{
+                display:block;
+                float:left;
+                padding-left: 11px;
+                padding-right: 11px;
+                border-right: 1px solid #ccc;
+            }
+        }
+        .car{
+            width: 110px;
+            a{
+                display:block;
+                height: 36px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                color:#333;
+                line-height: 36px;
+                font-size: 14px;
+            }
+        }
+    }
+    .topNavSec{
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 2px solid #000;
+        h2{
+            width: 160px;
+            color: #f0f0f0;
+            float:left;
+            font-size: 14px;
+            background-color: #151515;
+            text-align: center;
+            position:relative;
+            .listNav{
+                position:absolute;
+                top:42px;
+                text-align: center;
+                width: 160px;
+                li{
+                    width: 160px;
+                    height: 36px;
+                    background-color: #000;
+                    opacity: 0.7;
+                }
+            }
+        }
+        .actNav{
+            li{
+                float:left;
+                font-weight: 900;
+                padding-left: 40px;
+            }
+
+        }
+    }
+
+}
+main{
+    .banner{
+        height: 400px;
+        overflow: hidden;
+        ul{
+            img{
+                display:block;
+            }
+        }
+    }
+    .accept{
+        height: 45px;
+        line-height: 45px;
+        ul{
+            float:left;
+            font-size: 14px;
+            color:#eee;
+            li{
+                float:left;
+                padding-right: 42px;
+            }
+        }
+        h3{
+            float:right;
+            color:red;
+            font-size: 14px;
+        }
+    }
+
+}
