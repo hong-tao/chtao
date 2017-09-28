@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*
+    存放全局变量
+ */
+header {
+  height: 100px;
+  background-color: white;
+}
+
+header ul {
+  margin-top: 27px;
+}
+
+header ul .logo {
+  float: left;
+}
+
+header ul .pro {
+  float: right;
+}
+
+main {
+  height: 520px;
+  background-color: #F8F8F8;
+  border-top: 1px solid #ddd;
+}
+
+main .dis {
+  display: flex;
+}
+
+main .dis > li:nth-child(1) {
+  padding-top: 150px;
+  flex: 1;
+}
+
+main .dis > li:nth-child(2) {
+  width: 353px;
+  padding-top: 50px;
+}
+
+main .regist {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding-left: 42px;
+  padding-right: 40px;
+}
+
+main .regist h3 {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+main .regist h3 span:nth-child(1) {
+  color: #E31436;
+  line-height: 51px;
+}
+
+main .regist h3 span:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  font-size: 14px;
+}
+
+main .regist h3 span:nth-child(2) a {
+  color: #94C6F2;
+}
+
+main .regist .regiCon {
+  height: 356px;
+}
+
+main .regist .regiCon #phone, main .regist .regiCon #pass {
+  margin-top: 40px;
+  height: 33px;
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+}
+
+main .regist .regiCon .slider {
+  margin-top: 16px;
+  height: 28px;
+  font-size: 12px;
+  display: flex;
+}
+
+main .regist .regiCon .slider li:nth-child(1) {
+  width: 58px;
+}
+
+main .regist .regiCon .slider li:nth-child(2) {
+  flex: 1;
+  text-align: center;
+  line-height: 28px;
+}
+
+main .regist .regiCon .check {
+  margin-top: 16px;
+  display: flex;
+  width: 100%;
+  height: 34px;
+  border: 1px solid #ccc;
+}
+
+main .regist .regiCon .check input {
+  border: 0 none;
+  flex: 1;
+}
+
+main .regist .regiCon .check button {
+  background-color: #EEEEEE;
+  width: 98px;
+}
+
+main .regist .regiCon #pass {
+  margin-top: 16px;
+}
+
+main .regist .regiCon > button {
+  height: 36px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #E31436;
+}
+
+main .regist .regiCon > p {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+main .regist .regiCon > p a {
+  color: #ccc;
+}
+
+footer {
+  height: 184px;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer img {
+  display: inline-block;
+}
+
+footer a {
+  color: #111;
+}
+
+footer .last {
+  margin-top: 45px;
+}
+
+footer .last p:nth-child(1) > a {
+  display: inline-block;
+  padding: 0 24px;
+  border-right: 1px solid #ddd;
+  font-size: 14px;
+}
+
+footer .last p:nth-child(1) a:last-child {
+  border-right: 0;
+}
+
+footer .last p:nth-child(2), footer .last p:nth-child(3), footer .last p:nth-child(4) {
+  color: #bbb;
+  margin-top: 14px;
+}
+
+footer .last p:nth-child(2) span, footer .last p:nth-child(3) span, footer .last p:nth-child(4) span {
+  padding-right: 44px;
+}
+
+footer .last p:nth-child(2) a, footer .last p:nth-child(3) a, footer .last p:nth-child(4) a {
+  color: #bbb;
+  padding-right: 22px;
+}
+
+footer .last p:nth-child(4) img {
+  padding-right: 30px;
+  height: 40px;
+  width: auto;
+}

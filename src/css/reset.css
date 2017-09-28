@@ -10,3 +10,17 @@ ul {
 a {
   text-decoration: none;
 }
+
+.clearfix:after {
+  zoom: 1;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+  content: "";
+  display: block;
+  height: 0;
+}
+
+img {
+  display: block;
+}

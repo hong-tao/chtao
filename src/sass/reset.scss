@@ -1,3 +1,15 @@
 *{margin: 0;padding: 0;}
 ul{list-style: none;}
 a{text-decoration: none;}
+.clearfix:after{
+    zoom:1;
+    overflow: hidden;
+    clear:both;
+    visibility: hidden;
+    content:"";
+    display: block;
+    height:0;
+}
+img{
+    display:block;
+}

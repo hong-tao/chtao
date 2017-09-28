@@ -2,3 +2,21 @@
   width: 1090px;
   margin: 0 auto;
 }
+
+.fcontainer {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.loginCon {
+  width: 968px;
+  margin: 0 auto;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: 0 none;
+}

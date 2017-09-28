@@ -21,12 +21,12 @@ gulp.task('g',function(){
 });
 
 
-// 监听sass文件修改
-// gulp.task('jtSass',function(){
-//     // 监听home.scss文件，如果有修改,则自动自动compileSass任务
-//     gulp.watch('./src/sass/home.scss',['compileSass']);
-// });
 
+// 监听sass文件修改
+gulp.task('j',function(){
+    // 监听home.scss文件，如果有修改,则自动自动compileSass任务
+    gulp.watch('./src/sass/*.scss',['g']);
+});
 
 // 合并压缩
 /*var concat = require('gulp-concat');
