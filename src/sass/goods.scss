@@ -1,0 +1,152 @@
+@import 'var';
+
+main{
+
+    .information{
+        .goodsHead{
+            height: 62px;
+            font-size:14px;
+            line-height:62px;
+            border-bottom:1px solid #ccc;
+        }
+        .goodsBody{
+            height: 700px;
+            display:flex;
+            .goodsLeft{
+                width: 404px;
+                padding-top:37px;
+                .show{
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    margin:2px auto;
+                    width: 400px;
+                    height: 400px;
+                    border:1px solid #ccc;
+                }
+                .showBot{
+                    margin-top:18px;
+                    height: 68px;
+                    width: 404px;
+                    position: relative;
+                    span{
+                        position:absolute;
+                        width: 35px;
+                        height: 68px;
+                        display:block;
+                        border:1px solid #ccc;
+                        text-align:center;
+                        line-height:68px;
+                    }
+                    span:nth-child(1){
+                        top:0;
+                        left:0;
+                    }
+                    span:nth-of-type(2){
+                        top:0;
+                        right:0;
+                    }
+                    ul{
+                        height: 68px;
+                        width: 306px;
+                        display:flex;
+                        justify-content:space-between;
+                        margin:0 auto;
+                        li{
+                            height: 66px;
+                            width: 66px;
+                            border:2px solid #f00;
+                            float:left;
+                            img{
+                                height: 66px;
+                                width: 66px;
+                            }
+                        }
+                    }
+                }
+            }
+            .goodsRig{
+                flex:1;
+                padding-top:37px;
+                padding-left:30px;
+                .rigTop{
+                    p:nth-child(1){
+                        font-size:12px;
+                        line-height:26px;
+                    }
+                    p:nth-child(2){
+                        font-size:20px;
+                        margin-top:10px;
+                        span{
+                            color:$deRed;
+                        }
+                        a{
+                            font-weight:700;
+                            color:$deCol;
+                        }
+                    }
+                    p:nth-child(3){
+                        margin-top:10px;
+                        font-size:14px;
+                        line-height:20px;
+                        margin-bottom:14px;
+                    }
+                    
+                }
+                .rigCen{
+                    padding-left:85px;
+                    p{
+                        position:relative;
+                    }
+                    .itemsLeft{
+                        position:absolute;
+                        top:0;
+                        left:-80px;
+
+                    }
+                    p:nth-child(1){
+                        height: 50px;
+                        background-color:#F9F9F9;
+                        border:1px dotted #ddd;
+                    }
+                    p:nth-child(2){
+                        height: 32px;
+                        span:nth-child(2){
+                            margin-top:12px;
+                            display:inline-block;
+                            background-color:$deRed;
+                            width: 54px;
+                            height: 20px;
+                            font-size:16px;
+                            line-height:18px;
+                            text-align:center;
+                            color:white;
+                        }
+                    }
+                    p:nth-child(3){
+                        margin-top:12px;
+                        height: 24px;
+                    }
+                    p:nth-child(4){
+                        margin-top:12px;
+                        height: 24px;
+                    }
+                    p:nth-child(5){
+                        margin-top:12px;
+                    }
+                    p:nth-child(6){
+                        font-size:14px;
+                        border:1px solid #ccc;
+                        padding:20px 10px;
+                        margin-top:12px;
+                        background-color:#FFF8DB;
+
+                    }
+                    p:nth-child(7)
+
+                }
+            }
+        }
+    }
+    
+}

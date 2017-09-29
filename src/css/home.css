@@ -47,6 +47,27 @@ header .topNav .navLeft li:nth-child(3) {
   width: 81px;
 }
 
+header .topNav .navLeft .code {
+  position: relative;
+}
+
+header .topNav .navLeft .code p {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 1002;
+}
+
+header .topNav .navLeft .code p img {
+  width: 100px;
+  height: 130px;
+}
+
+header .topNav .navLeft .code:hover p {
+  display: block;
+}
+
 header .topNav .navRight {
   float: right;
 }
@@ -214,6 +235,10 @@ header .topNavSec {
   border-bottom: 2px solid #000;
 }
 
+header .topNavSec h2:hover .listNav {
+  display: block;
+}
+
 header .topNavSec h2 {
   width: 160px;
   color: #ccc;
@@ -232,6 +257,8 @@ header .topNavSec h2 .listNav {
   height: 400px;
   display: flex;
   flex-direction: column;
+  display: none;
+  z-index: 1000;
 }
 
 header .topNavSec h2 .listNav li {

@@ -1,0 +1,102 @@
+@import 'var';
+
+
+main{
+    .choose{
+        height: 400px;
+        h3{
+            height: 73px;
+            font-size:24px;
+            line-height:73px;
+            text-align:center;
+        }
+        ul{
+            display:flex;
+            li{
+                flex:1;
+            }
+        }
+    }
+    .deHead{
+        h2{
+            height: 110px;
+            font-size:28px;
+            line-height:110px;
+            text-align:center;
+        }
+        .tab{
+            background-color:white;
+            display:flex;
+            height: 44px;
+            text-align:center;
+            font-size:14px;
+            li{
+                margin-top:15px;
+                margin-bottom:17px;
+                flex:1;
+                span{
+                    width:100%;
+                    color:$deCol;
+                    display:inline-block;
+                    border-right:1px solid #aaa;
+                }
+
+            }
+            li:last-child span{
+                    border-right:0;
+            }
+        }
+
+    }
+    .disp{
+        margin:0 auto;
+       
+        .disSingle{
+            background-color:white;
+            float:left;
+            width: 222px;
+            height: 347px;
+            padding:10px;
+            margin-right:10px;
+            margin-top:10px;
+            >a{
+                img{
+                    width: 218px;
+                    height: 218px;
+                }
+
+            }
+            .titles{
+                margin-top:20px;
+                font-size:12px;
+                line-height:24px;
+                position:relative;
+                >span{
+                    color:#E31436;
+                }
+                a{
+                    color:$deCol;
+                }
+                >p{
+                    margin-top:20px;
+                }
+                >p span:nth-child(1){
+                    font-size:16px;
+                    color:#E31436;
+                }
+                button{
+                    width: 60px;
+                    height: 26px;
+                    background-color:#D22147;
+                    color:white;
+                    position:absolute;
+                    right:10px;
+                    bottom:0px;
+                }
+            }
+        }
+        >li:nth-child(4n){
+            margin-right:0;
+        }
+    }
+}
