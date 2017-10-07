@@ -129,6 +129,10 @@ main .list .detailCar {
   background-color: #FFFBF0;
 }
 
+main .list .detailCar a {
+  color: #111;
+}
+
 main .list .detailCar .numb {
   margin-top: 10px;
   text-align: center;

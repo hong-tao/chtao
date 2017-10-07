@@ -105,6 +105,9 @@ main{
             font-size:12px;
             height: 110px;
             background-color:#FFFBF0;
+            a{
+                color:$deCol;
+            }
             .numb{
                 margin-top:10px;
                 text-align:center;

@@ -3,14 +3,13 @@
 	
 	$username = isset($_GET['username']) ? $_GET['username'] : '';
 	$password = isset($_GET['password']) ? $_GET['password'] : '123456';
-	$email = isset($_GET['email']) ? $_GET['email'] : '';
-	$grade = isset($_GET['grade']) ? $_GET['grade'] : '';
-	$gender = isset($_GET['gender']) ? $_GET['gender'] : '';
-	$birthday = isset($_GET['birthday']) ? $_GET['birthday'] : '';
-	$phone = isset($_GET['phone']) ? $_GET['phone'] : '';
+
+
+
 
 	//查看用户名是否已经存在
-	$sql = "select username from user where username='$username'";
+	$sql = "select username from login where username='$username'";
+
 	$result = $conn->query($sql);
 	if($result->num_rows>0){
 		echo "fail";
@@ -21,15 +20,15 @@
 		$password = md5($password);
 		// echo "$password <br>";
 
-		/*
-			password_hash()     //对密码加密.
-				* PASSWORD_DEFAULT：Bcrypt加密算法，字段超过60个字符长度，
-				* PASSWORD_BCRYPT：字符串长度总为60。
-			password_verify()    //验证已经加密的密码，检验其hash字串是否一致.
-		 */
+		
+			// password_hash()     //对密码加密.
+			// 	* PASSWORD_DEFAULT：Bcrypt加密算法，字段超过60个字符长度，
+			// 	* PASSWORD_BCRYPT：字符串长度总为60。
+			// password_verify()    //验证已经加密的密码，检验其hash字串是否一致.
+		 
 		// $password = password_hash($password,PASSWORD_DEFAULT);
 
-		$sql = "insert into user (username,password,email,grade,gender,birthday,phone) values('$username','$password','$email','$grade','$gender','$birthday','$phone')";
+		$sql = "insert into login (username,password) values('$username','$password')";
 
 
 		// 获取查询结果

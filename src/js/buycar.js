@@ -1,6 +1,7 @@
 require(['config'],function(){
     require(['jquery','common'],function(){
 
+        //请求头部和底部
         $('header').load('../html/head.html .topNav',function(){
 
         });
@@ -35,6 +36,9 @@ require(['config'],function(){
             });
         }
 
+
+
+        //写入cookie带入的商品
         var write = $.map(carlist,function(item,idx){
                     var sum = Number(`${item.qty}`)* Number(`${item.price}`);
                     var tax = (sum*0.17).toFixed(2);
@@ -44,9 +48,13 @@ require(['config'],function(){
                             <input type="checkbox" />
                             <p class= 'liId' style="text-indent:-1000px">${item.id}</p>
                         </div>
-                        <div><img src="../${item.imgurl}" style="width:80px;height:80px" alt="" /></div>
                         <div>
-                            <p class="carName">${item.name}</p>
+                            <a href="../html/goods.html?id=${item.id}"><img src="../${item.imgurl}" style="width:80px;height:80px" alt="" /></a>
+                        </div>
+                        <div>
+                            <p class="carName">
+                            <a href="../html/goods.html?id=${item.id}">${item.name}</a>
+                            </p>
                             <p>不支持7天无理由退货</p>
                             <span>特价</span>
                         </div>
@@ -128,7 +136,7 @@ require(['config'],function(){
         });
 
        
-        //小小封装
+        //小小封装,求商品的价格总和,有bug
         var allSum=0;
         $('.sum').each(function(idx,item){
             var res = Number($(item).text());
@@ -143,7 +151,8 @@ require(['config'],function(){
                 allSum += res;
             });
 
-            $('.already').text(carlist.length);
+            $('.already').html(carlist.length);
+            $('.alreadyqty').html(carlist.length);
             $('.payReds').text(allSum);
         }
 
@@ -151,7 +160,7 @@ require(['config'],function(){
 
 
 
-         // 写入总价列表
+         // 写入总价列表,底部统计栏
         var allsums = 
         `<ul>
             <li>
@@ -245,6 +254,9 @@ require(['config'],function(){
         });
 
 
+
+
+        //删除选中的商品
         $('.delSel').click(function(){
          var $res = $('.list').find(':checkbox').filter(':checked');
 

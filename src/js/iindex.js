@@ -1,5 +1,5 @@
 require(['config'],function(){
-    require(['jquery','common','xCarousel'],function($){
+    require(['jquery','common','xCarousel','allNeed'],function($){
 
         
         
