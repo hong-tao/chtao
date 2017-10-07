@@ -189,7 +189,7 @@ require(['config'],function(){
                         imgurl:item.imgurl,
                         sale_price:item.sale_price,
                         add_time:item.add_time,
-                        qty:1
+                        qty:qqty
                     }
 
 

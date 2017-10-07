@@ -93,6 +93,12 @@ main{
     }
     .list{
         border:1px solid #ccc;
+        li{
+            border-bottom:1px solid #ddd;
+        }
+        li:last-child{
+            border-bottom:0;
+        }
         .detailCar{
             padding:0 20px;
             padding-top:20px;
@@ -110,7 +116,7 @@ main{
                 span{
                     flex:1;
                     font-size:16px;
-                    background-color;white;
+                    background-color:white;
                 }
                 input{
                     text-align:center;
@@ -149,6 +155,62 @@ main{
             div:nth-child(6){
                 width: 213px;
                 text-align:center;
+            }
+            div{
+                float:left;
+            }
+        }
+    }
+    .pay{
+        margin-top:36px;
+        height: 60px;
+        border:1px solid #ccc;
+        ul{
+            display:flex;
+            li:nth-child(1){
+                width: 180px;
+                line-height:60px;
+                padding-left:20px;
+
+            }
+            li:nth-child(2){
+                flex:1;
+                padding-top:12px;
+                padding-right:30px;
+                font-size:12px;
+                p{
+                    float:right;
+                    padding-left:100px;
+                    .payRed{
+                        color:$deRed;
+                        font-size:16px;
+                        font-weight:900;
+                    }
+                    .payReds::before{
+                        content:"￥";
+                    }
+                     >span{
+                        padding-left:20px;
+                    }
+                }
+                p:nth-child(2){
+                    padding-top:6px;
+                    color:$liCol;
+
+
+                }
+            }
+            li:nth-child(3){
+                width: 120px;
+                span{
+                    display:block;
+                    background-color:$deRed;
+                    height: 100%;
+                    font-size:20px;
+                    line-height:60px;
+                    color:white;
+                    text-align:center;
+                }
             }
         }
     }
