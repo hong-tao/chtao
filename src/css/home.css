@@ -898,7 +898,21 @@ footer .lastFoot p:last-child img {
   flex-direction: column;
 }
 
+.toTopRig ul .anim {
+  display: block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: white;
+  position: absolute;
+  background-color: #f00;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
 .toTopRig ul li {
+  position: relative;
   flex: 1;
   border: 1px solid #eee;
   text-align: center;

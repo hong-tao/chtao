@@ -4,7 +4,7 @@ require(['config'],function(){
 
 
     //将头部和底部加载进来
-       $('header').load('../html/head.html header',function(){
+       $('header').load('../html/head.html header>div',function(){
             $('header').find('img').each(function(idx,item){
           
                 var res ='../'+ $(this).attr('src');
@@ -24,6 +24,15 @@ require(['config'],function(){
             });
        });
 
+       $('.toTopRig').load('../html/foot.html .toTopRig',function(){
+
+
+
+            //写在外边获取不到元素
+            $('#toTop').click(function (){ $('body').animate({ scrollTop: 0 }, 2000) });
+
+        });
+
 
     //ajax请求数据
         $.ajax({
@@ -31,11 +40,12 @@ require(['config'],function(){
             type: 'GET',
             success:function(res){
 
-                console.log(JSON.parse(res));
+                // console.log(JSON.parse(res));
 
                 var goodslist = JSON.parse(res);
   
                 var html = $.map(goodslist,function(item,idx){
+
 
                     return `<li class="disSingle">
                                 <a href="../html/goods.html?id=${item.id}"><img src="../${item.imgurl}"></a>
@@ -82,6 +92,35 @@ require(['config'],function(){
             width:1423,
             height:400
         });
+
+    //tab标签切换
+
+
+
+
+    $('.tab').each(function(idx,items){
+        $(items).find('li').first().addClass('tabActive');
+    });
+
+
+    $('.tab').on('click','li',function(){
+
+        $(this).addClass('tabActive').siblings().removeClass('tabActive');
+    });
+
+
+
+
+    $(window).scroll(function(){
+
+        if($(window)[0].scrollY<360){
+            $('.toTopRig').hide();
+        }else{
+            $('.toTopRig').show();
+        };
+    });
+
+
 
     });
 })

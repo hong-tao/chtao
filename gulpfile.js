@@ -49,4 +49,29 @@ gulp.task('mergeJs',function(){
         .pipe(rename({suffix:'.min'}))
 
         .pipe(gulp.dest('./src/js/'))
-})*/
+});*/
+
+//自动刷新服务器
+// php服务器(12306):能解析php文件
+// browserSync服务器(666):能自动刷新
+var browserSync = require('browser-sync');
+gulp.task('s',function(){
+    // 创建服务器
+    browserSync({
+        //指定服务器目录
+        //server:'./src',
+        //代理
+        proxy:'http://localhost:1704',
+
+        //指定服务器端口
+        // port:666
+        
+        //监听文件修改
+        //当文件有修改时,自动刷新页面
+        
+        files:['./src/**/*.html','./src/css/*.css','./src/api/*.php']
+    });
+
+    //监听sass的修改
+    gulp.watch('./src/sass/*.scss',['g']);
+});

@@ -25,3 +25,9 @@ input {
 button {
   border: 0 none;
 }
+
+.tabActive {
+  font-size: 16px;
+  color: #f00;
+  font-weight: 800;
+}

@@ -11,20 +11,8 @@ require(['config'],function(){
             width:1423,
             height:400
         });
+        
 
-
-
-        //返回顶部动画
-        // $('#toTop').on('click',function(){
-
-        //      var timer=setInterval(function(){
-        //         scrollBy(0,-50);
-        //         if(scrollY<=0){
-        //         clearInterval(timer);
-        //         }
-        //     },30);
-
-        // });
 
 
         $('#toTop').click(function (){ $('body').animate({ scrollTop: 0 }, 2000) });
@@ -39,13 +27,6 @@ require(['config'],function(){
                 $('.toTopRig').show();
             };
         });
-
-        
-
-
-
-
-
 
 
     });

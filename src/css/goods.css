@@ -2,6 +2,10 @@
 /*
     存放全局变量
  */
+main {
+  background-color: white;
+}
+
 main .information .goodsHead {
   height: 62px;
   font-size: 14px;
@@ -67,7 +71,7 @@ main .information .goodsBody .goodsLeft .showBot ul {
 main .information .goodsBody .goodsLeft .showBot ul li {
   height: 66px;
   width: 66px;
-  border: 2px solid #f00;
+  border: 2px solid #eee;
   float: left;
 }
 
@@ -110,7 +114,10 @@ main .information .goodsBody .goodsRig .rigTop p:nth-child(3) {
 
 main .information .goodsBody .goodsRig .rigCen {
   padding-left: 85px;
-  p: nth-child(7);
+}
+
+main .information .goodsBody .goodsRig .rigCen a {
+  color: #111;
 }
 
 main .information .goodsBody .goodsRig .rigCen p {
@@ -127,6 +134,30 @@ main .information .goodsBody .goodsRig .rigCen p:nth-child(1) {
   height: 50px;
   background-color: #F9F9F9;
   border: 1px dotted #ddd;
+  line-height: 50px;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(1) .price {
+  font-size: 22px;
+  color: #E31436;
+  font-weight: 900;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(1) .price::before {
+  content: "￥";
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(1) > span:nth-child(3) {
+  height: 20px;
+  background-color: #F68587;
+  font-size: 12px;
+  color: white;
+  padding: 0 7px;
+  border-radius: 2px;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(1) .sale_price {
+  font-size: 12px;
 }
 
 main .information .goodsBody .goodsRig .rigCen p:nth-child(2) {
@@ -165,4 +196,72 @@ main .information .goodsBody .goodsRig .rigCen p:nth-child(6) {
   padding: 20px 10px;
   margin-top: 12px;
   background-color: #FFF8DB;
+}
+
+main .information .goodsBody .goodsRig .rigCen #numb, main .information .goodsBody .goodsRig .rigCen .numb {
+  margin-top: 10px;
+  text-align: center;
+  width: 104px;
+  height: 24px;
+  border: 1px solid #ddd;
+  display: flex;
+}
+
+main .information .goodsBody .goodsRig .rigCen #numb span, main .information .goodsBody .goodsRig .rigCen .numb span {
+  flex: 1;
+}
+
+main .information .goodsBody .goodsRig .rigCen #numb input, main .information .goodsBody .goodsRig .rigCen .numb input {
+  text-align: center;
+  width: 58px;
+  height: 100%;
+  border: 0;
+}
+
+main .information .goodsBody .goodsRig .rigCen > p:nth-child(8) {
+  background-color: #F3F3F3;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(9) {
+  margin-top: 12px;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(10) {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(11) {
+  margin-top: 18px;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(11) span:nth-child(1), main .information .goodsBody .goodsRig .rigCen p:nth-child(11) span:nth-child(2) {
+  display: inline-block;
+  height: 46px;
+  border: 2px solid #E31436;
+  text-align: center;
+  line-height: 46px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(11) span:first-child {
+  width: 160px;
+  background-color: #FFECED;
+  color: #E31436;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(11) span:nth-child(2) {
+  margin-left: 120px;
+  width: 180px;
+  background-color: #E31436;
+  color: white;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(11) span:nth-child(3) {
+  margin-left: 50px;
+}
+
+main .information .goodsBody .goodsRig .rigCen p:nth-child(12) {
+  margin-top: 12px;
 }

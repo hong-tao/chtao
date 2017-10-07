@@ -771,7 +771,22 @@ footer{
         display:flex;
         flex-direction:column;
 
+
+        .anim{
+            display:block;
+            border-radius:50%;
+            width: 20px;
+            height: 20px;
+            color:white;
+            position:absolute;
+            background-color:#f00;
+            right:0;
+            top:0;
+            display:none;
+        }
+
         li{
+            position:relative;
             flex:1;
             border:1px solid #eee;
             text-align:center;

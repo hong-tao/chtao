@@ -6,7 +6,8 @@ require.config({
     paths:{
         jquery:'../lib/jquery-3.1.1',
         common:'../js/common',
-        xCarousel:'../lib/jquery-xCarousel/jquery.xcarousel'
+        xCarousel:'../lib/jquery-xCarousel/jquery.xcarousel',
+        lxzoom:'../lib/lxzoom/lxzoom'
 
     },
 
@@ -14,7 +15,8 @@ require.config({
     shim:{
         //common依赖jquery
         common:['jquery'],
-        xCarousel:['jquery']
+        xCarousel:['jquery'],
+        lxzoom:['jquery']
     }
 
 });

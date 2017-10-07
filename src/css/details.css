@@ -44,7 +44,6 @@ main .deHead .tab li {
 
 main .deHead .tab li span {
   width: 100%;
-  color: #111;
   display: inline-block;
   border-right: 1px solid #aaa;
 }

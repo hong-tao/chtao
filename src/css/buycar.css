@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*
+    存放全局变量
+ */
+main {
+  background-color: white !important;
+}
+
+main .logo {
+  height: 120px;
+}
+
+main .logo img {
+  margin-top: 27px;
+}
+
+main .carHead li {
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+main .carHead li:last-child {
+  margin-right: 0;
+}
+
+main .carHead .carLeft {
+  float: left;
+  font-weight: 900;
+}
+
+main .carHead .carRig {
+  float: right;
+  font-size: 12px;
+}
+
+main .chooes .box {
+  margin-top: 10px;
+  height: 35px;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+}
+
+main .chooes .box li {
+  line-height: 35px;
+  font-size: 14px;
+  color: #ccc;
+  float: left;
+}
+
+main .chooes .box li:nth-child(1) {
+  width: 120px;
+}
+
+main .chooes .box li:nth-child(1) input {
+  width: 14px;
+  height: 14px;
+}
+
+main .chooes .box li:nth-child(2) {
+  width: 425px;
+}
+
+main .chooes .box li:nth-child(3) {
+  width: 150px;
+}
+
+main .chooes .box li:nth-child(4) {
+  width: 150px;
+}
+
+main .chooes .box li:nth-child(5) {
+  width: 120px;
+}
+
+main .chooes .next {
+  margin-top: 24px;
+  height: 35px;
+  padding: 0 20px;
+}
+
+main .chooes .next li {
+  float: left;
+  font-size: 14px;
+}
+
+main .chooes .next li:nth-child(1) input {
+  width: 14px;
+  height: 14px;
+}
+
+main .chooes .next li:nth-child(2) {
+  margin-left: 15px;
+}
+
+main .chooes .next li:nth-child(2) span {
+  display: block;
+  padding: 0 3px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+}
+
+main .chooes .next li:nth-child(3) {
+  margin-left: 5px;
+}
+
+main .chooes .next li:nth-child(3) span {
+  font-weight: 900;
+}
+
+main .list {
+  border: 1px solid #ccc;
+}
+
+main .list .detailCar {
+  display: flex;
+  padding: 0 20px;
+  padding-top: 20px;
+  font-size: 12px;
+  height: 110px;
+  background-color: #FFFBF0;
+}
+
+main .list .detailCar .numb {
+  margin-top: 10px;
+  text-align: center;
+  width: 88px;
+  height: 24px;
+  border: 1px solid #ddd;
+  display: flex;
+}
+
+main .list .detailCar .numb span {
+  flex: 1;
+  font-size: 16px;
+}
+
+main .list .detailCar .numb input {
+  text-align: center;
+  width: 43px;
+  height: 100%;
+  border: 0;
+}
+
+main .list .detailCar div:nth-child(1) {
+  width: 25px;
+  line-height: 60px;
+}
+
+main .list .detailCar div:nth-child(2) {
+  width: 96px;
+}
+
+main .list .detailCar div:nth-child(3) {
+  width: 220px;
+}
+
+main .list .detailCar div:nth-child(4) {
+  width: 320px;
+  text-align: center;
+}
+
+main .list .detailCar div:nth-child(4) p:nth-child(1) {
+  text-decoration: line-through;
+}
+
+main .list .detailCar div:nth-child(4) p:nth-child(2) {
+  font-weight: 900;
+}
+
+main .list .detailCar div:nth-child(5) {
+  width: 90px;
+}
+
+main .list .detailCar div:nth-child(6) {
+  width: 213px;
+  text-align: center;
+}
