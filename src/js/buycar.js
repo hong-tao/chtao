@@ -106,6 +106,8 @@ require(['config'],function(){
             taxs = (sums * 0.17).toFixed(2);
             $(this).parents('.detailCar').find('.tax').text(taxs);
 
+            $('.alreadyqty').text(carlist.length);
+
             other();
 
         });
@@ -131,17 +133,24 @@ require(['config'],function(){
             taxs = (sums * 0.17).toFixed(2);
             $(this).parents('.detailCar').find('.tax').text(taxs);
 
+            $('.alreadyqty').text(carlist.length);
+
             other();
   
         });
 
-       
+        var arr = [];
         //小小封装,求商品的价格总和,有bug
-        var allSum=0;
         $('.sum').each(function(idx,item){
             var res = Number($(item).text());
-            allSum += res;
+            arr.push(res);
+
         });
+        var allSum = arr.reduce((prev,curr)=>{
+
+            return prev+curr;
+         });
+
 
 
         function other(){
@@ -152,9 +161,11 @@ require(['config'],function(){
             });
 
             $('.already').html(carlist.length);
-            $('.alreadyqty').html(carlist.length);
+            
             $('.payReds').text(allSum);
         }
+
+
 
 
 

@@ -7,7 +7,9 @@ require.config({
         jquery:'../lib/jquery-3.1.1',
         common:'../js/common',
         xCarousel:'../lib/jquery-xCarousel/jquery.xcarousel',
-        lxzoom:'../lib/lxzoom/lxzoom'
+        lxzoom:'../lib/lxzoom/lxzoom',
+        allNeed:'allNeed',
+        detail:'detail'
 
     },
 

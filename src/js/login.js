@@ -1,11 +1,11 @@
-require(['config'],function(){
+require(['config','allNeed'],function(){
     require(['jquery','common'],function($){
 
-
-            $('header').load('regist.html header',function(){
+            //强行覆盖
+            $('header').load('regist.html header>div',function(){
             });
            
-            $('footer').load('regist.html footer',function(){
+            $('footer').load('regist.html footer>div',function(){
             });
 
 
@@ -13,6 +13,7 @@ require(['config'],function(){
             $('button').click(function(){
                 var username = $('#user').val();
                 var check = $('#check').val();
+
 
 
                 $.ajax({
@@ -32,11 +33,6 @@ require(['config'],function(){
                     }
                 });
 
-
-
-
-
-                cookie(username,check);
 
             });
 

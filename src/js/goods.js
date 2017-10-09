@@ -1,14 +1,5 @@
 require(['config'],function(){
-    require(['jquery','common','lxzoom'],function(){
-
-
-        //加载头部和底部
-        $('header').load('../html/head.html header>div',function(){
-        });
-        $('footer').load('../html/foot.html footer',function(){
-        });
-        $('.to').load('../html/foot.html .toTopRig',function(){
-
+    require(['jquery','common','lxzoom','allNeed'],function(){
 
 
 
@@ -31,43 +22,8 @@ require(['config'],function(){
             }
 
 
-
-            //写在外边获取不到元素
-            $('#toTop').click(function (){ $('body').animate({ scrollTop: 0 }, 2000) });
-
-            //添加商品的动画
-         
-            var res = $('#toTop').prev().prev().append('<span class="anim"></span>');
-
-            var res =1;
-            $('#toCar').click(function(){
-                res++;
-                $('.anim').css({'display':'block'}).html(res);
-
-
-
+            
              var qqty = $('#numb input').val();
-             console.log(qqty);
-
-     
-             //利用ajax把cookie写入数据库
-            $.ajax({
-                url:'../api/cookie.php',
-                type:'GET',
-                data:{id:id,qty:qqty},
-                success:function(res){
-                    console.log(res);
-     
-                }
-            });
-
-
-
-
-
-            });
-        });
-
 
 
         //页面传参和写入
@@ -157,7 +113,7 @@ require(['config'],function(){
 
 
         function cook(item){
-            console.log(item);
+
             //cookie的写入和读取
             var carlist = [];
             var cookies = document.cookie;

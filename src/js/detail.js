@@ -1,37 +1,7 @@
 require(['config'],function(){
-    require(['jquery','common','xCarousel'],function($){
+    require(['jquery','common','xCarousel','allNeed'],function($){
 
 
-
-    //将头部和底部加载进来
-       $('header').load('../html/head.html header>div',function(){
-            $('header').find('img').each(function(idx,item){
-          
-                var res ='../'+ $(this).attr('src');
-                $(this).attr('src',res);
-
-            });
-
-        });
-
-
-       $('footer').load('../html/foot.html footer',function(){
-           $('footer').find('img').each(function(idx,item){
-                
-                var res ='../'+ $(this).attr('src');
-                $(this).attr('src',res);
-                
-            });
-       });
-
-       $('.toTopRig').load('../html/foot.html .toTopRig',function(){
-
-
-
-            //写在外边获取不到元素
-            $('#toTop').click(function (){ $('body').animate({ scrollTop: 0 }, 2000) });
-
-        });
 
 
     //ajax请求数据
@@ -86,7 +56,7 @@ require(['config'],function(){
 
     //轮播图插件
         $('.banner').xCarousel({
-            imgs:['../img2/moCarousel1.jpg','../img2/moCarousel2.jpg','../img2/moCarousel3.jpg'],
+            imgs:['../img/moCarousel1.jpg','../img/moCarousel2.jpg','../img/moCarousel3.jpg'],
             index:1,
             type:'fade',
             width:1423,
@@ -118,6 +88,15 @@ require(['config'],function(){
         }else{
             $('.toTopRig').show();
         };
+    });
+
+
+
+    //添加入购物车
+
+    $('main').on('click','button',function(){
+        console.log(this);
+
     });
 
 
